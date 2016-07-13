@@ -7,7 +7,8 @@
 canvas {
     border: 5px solid #181818;
     background-color: #EEEEEE;
-    padding-left: 100px
+    padding-left: 100px;
+    position: relative;
 }
 p {
     font-family: 'Oswald', sans-serif;
@@ -21,16 +22,25 @@ h2 {
 p {
     font-family: 'Oswald', sans-serif;
 }
-button {
+.button {
     width: 200px;
     height: 100px;
     background-position: 100px;
     background-color: #282828;
     font-family: 'Anton', sans-serif;
+    text-align: "center";
     font-size: 50px;
+    padding-left: 100px;
+    padding-top: 25px;
     color: #EEEEEE;
-    position: fixed;
-    left: 50%;
+    position: absolute;
+    left: 45.25%;
+    top: 45.25%;
+    background-position: "center";
+    transition-duration: 5s;
+    opacity: 1;
+
+
 
 }
 
@@ -41,7 +51,25 @@ button {
 
 <canvas id="myCanvas" width="1160" height="600" style="border:1px solid #000000;" allign = "left">
 </canvas>
+<h1 align="middle">WELCOME</h1>
+<p align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
+<h2 allign="middle">Gameplay:</h2>
+<p><ol>
+    <li>follow the spotlight that leads you to the first door</li>
+    <li>battle the sins to release the virtues, who will help you</li>
+    <li>battling yourself will be hard, but remember who you are and follow your instincts</li>
+</ol></p>
+<div id ="canvas"><div id="start" class = "button">PLAY</div></div>
 <script>
+
+var playbutton=document.getElementById("start");
+playbutton.addEventListener('click', function (){
+    console.log("i have been clicked");
+playbutton.style.opacity="0";
+
+
+
+});
 
 // function startGame() {
 //     myGameArea.start();
@@ -63,16 +91,6 @@ button {
 // }
 
 </script>
-<button type="button">PLAY</button>
-<h1 align="middle">WELCOME</h1>
-<p align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
-<h2 allign="middle">Gameplay:</h2>
-<p><ol>
-    <li>follow the spotlight that leads you to the first door</li>
-    <li>battle the sins to release the virtues, who will help you</li>
-    <li>battling yourself will be hard, but remember who you are and follow your instincts</li>
-</ol></p>
-<div id ="canvas"></div>
-<div id="button"></div>
 </body>
 </html>
+
