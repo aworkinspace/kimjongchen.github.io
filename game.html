@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Anton|Eczar|Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cormorant+Unicase|Eczar|Oswald" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<audio autoplay>
+    <source src= ./game/Monster.m4a></source>
+</audio>
 <style>
 canvas {
     border: 5px solid #181818;
@@ -14,7 +17,7 @@ p {
     font-family: 'Oswald', sans-serif;
 }
 h1 {
-    font-family: 'Eczar', serif;
+    font-family: 'Cormorant Unicase', serif;
 }
 h2 {
     font-family: 'Eczar', serif;
@@ -26,22 +29,24 @@ p {
     width: 200px;
     height: 100px;
     background-position: 100px;
-    background-color: #282828;
-    font-family: 'Anton', sans-serif;
+    background: #282828;
+    font-family: 'Berkshire Swash', cursive;
     text-align: "center";
-    font-size: 50px;
+    font-size: 60px;
     padding-left: 100px;
     padding-top: 25px;
     color: #EEEEEE;
     position: absolute;
     left: 45.25%;
     top: 45.25%;
-    background-position: "center";
+    background-position: "middle";
     transition-duration: 5s;
-    opacity: 1;
-
-
-
+    opacity: 1;border: 1px 
+    solid #000000;    
+    
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
 
 
@@ -51,7 +56,7 @@ p {
 
 <canvas id="myCanvas" width="1160" height="600" style="border:1px solid #000000;" allign = "left">
 </canvas>
-<h1 align="middle">WELCOME</h1>
+<h1 align="middle">welcome</h1>
 <p align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
 <h2 allign="middle">Gameplay:</h2>
 <p><ol>
@@ -59,7 +64,7 @@ p {
     <li>battle the sins to release the virtues, who will help you</li>
     <li>battling yourself will be hard, but remember who you are and follow your instincts</li>
 </ol></p>
-<div id ="canvas"><div id="start" class = "button">PLAY</div></div>
+<div id ="canvas"><div id="start" class = "button">play</div></div>
 <script>
 
 var playbutton=document.getElementById("start");
