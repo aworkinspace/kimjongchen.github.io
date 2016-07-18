@@ -3,18 +3,30 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cormorant+Unicase|Eczar|Oswald|Calligraffitti" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<style> body, a, a:hover { cursor:url(http://i1259.photobucket.com/albums/ii543/mietoki/cursor_exo1_zpsc3b56285.png), auto }</style>
+<style type=”text/css”> body, a, a:hover {cursor:url(“url here”), auto }</style>
 <audio autoplay loop="infinite">
     <source src= ./game/Monster.m4a></source>
 </audio>
 <style>
 canvas {
     border: 10px solid #181818;
+    position: absolute;
+}
+#homepage{
+    width: 936px;
+    height: 555px;
     background-image: url(http://i.imgur.com/CTlpNBv.png);
+    opacity: 1;
     transition-duration: 5s;
-    background-position: cover;
-    padding-left: 100px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#holder {
+    width: 936px;
+    height: 555px;
     position: relative;
+    margin-left-left: 100px;
 }
 h3 {
     font-family: 'Calligraffitti', cursive;
@@ -47,8 +59,8 @@ p {
     padding-bottom: 45px;
     color: #EEEEEE;
     position: absolute;
-    left: 25%;
-    top: 60%;
+    left: 27%;
+    top: 67%;
     z-index:10;
     transition-duration: 5s;
     opacity: 2;border: 1px 
@@ -58,48 +70,31 @@ p {
     -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
     box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
 }
-</style>
-</head>
+</style></head>
 <body>
-
-<canvas id="myCanvas" width="830" height="550" style="border:1px solid #000000;" allign = "left">
+<div id="holder">
+<canvas id="myCanvas" width="936" height="555" style="border:1px solid #000000;" allign = "left">
 </canvas>
+<div id="homepage"></div></div>
 <h1 align="middle">welcome</h1>
-<h3 align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
+<p align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
 <h2 allign="middle">Gameplay:</h2>
 <p><ol>
     <li>follow the spotlight that leads you to the first door</li>
     <li>battle the sins to release the virtues, who will help you</li>
     <li>battling yourself will be hard, but remember who you are and follow your instincts</li>
 </ol></p>
-<div id ="canvas"><div id="start" class = "button">play</div></div>
+<div id ="canvas"><div id="start" class = "button">play</div>
+
 <script>
 var playbutton=document.getElementById("start");
 playbutton.addEventListener('click', function (){
     console.log("i have been clicked");
 playbutton.style.opacity="0";
+var homepage= document.getElementById("homepage");
+homepage.style.opacity="0";
 
-});
-</script>
-<script type="text/javascript">
-    $(window).load(function() {
-   var images = ['img/top/bg-1.jpg','img/top/bg-2.jpg','img/top/bg-3.jpg'];
-    var i = 0;
 
-    function changeBackground() {
-        $('#wrapper').fadeOut(500, function(){
-            $('#wrapper').css('url(http://i.imgur.com/CTlpNBv.png)', function () {
-            if (i >= images.length) {
-                    i = 5;
-                }
-
-                return 'url(http://i.imgur.com/CTlpNBv.png)';
-            });
-            $('#wrapper').fadeOut(500);
-        })      
-    }
-    changeBackground();
-    setInterval(changeBackground, 3000);
 });
 </script>
 </body>
