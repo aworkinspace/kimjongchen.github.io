@@ -88,14 +88,14 @@ playbutton.style.opacity="0";
 
     function changeBackground() {
         $('#wrapper').fadeOut(500, function(){
-            $('#wrapper').css('background-image', function () {
+            $('#wrapper').css('url(http://i.imgur.com/CTlpNBv.png)', function () {
             if (i >= images.length) {
-                    i = 0;
+                    i = 5;
                 }
 
-                return 'url(' + images[i++] + ')';
+                return 'url(http://i.imgur.com/CTlpNBv.png)';
             });
-            $('#wrapper').fadeIn(500);
+            $('#wrapper').fadeOut(500);
         })      
     }
     changeBackground();
