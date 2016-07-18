@@ -81,5 +81,26 @@ playbutton.style.opacity="0";
 
 });
 </script>
+<script type="text/javascript">
+    $(window).load(function() {
+   var images = ['img/top/bg-1.jpg','img/top/bg-2.jpg','img/top/bg-3.jpg'];
+    var i = 0;
+
+    function changeBackground() {
+        $('#wrapper').fadeOut(500, function(){
+            $('#wrapper').css('background-image', function () {
+            if (i >= images.length) {
+                    i = 0;
+                }
+
+                return 'url(' + images[i++] + ')';
+            });
+            $('#wrapper').fadeIn(500);
+        })      
+    }
+    changeBackground();
+    setInterval(changeBackground, 3000);
+});
+</script>
 </body>
 </html>
