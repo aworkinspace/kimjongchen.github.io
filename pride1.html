@@ -57,9 +57,13 @@ p {
     <li>battle the sins to release the virtues, who will help you</li>
     <li>battling yourself will be hard, but remember who you are and follow your instincts</li>
 </ol></p>
-<div id ="canvas"><div id="start" class = "button">play</div>
+<div id ="canvas"><div id="next" class = "button">next</div>
 
 <script>
+var next=document.getElementById("start");
+next.addEventListener('click', function (){
+    console.log("i have been clicked");
+next.style.opacity="0";
 var homepage= document.getElementById("homepage");
 homepage.style.opacity="0";
 });
