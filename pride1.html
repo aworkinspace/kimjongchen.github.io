@@ -42,34 +42,7 @@ p {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
 }
-.button {
-    width: 100px;
-    height: 50px;
-    background-position: 100px;
-    background: #282828;
-    font-family: 'Berkshire Swash', cursive;
-    text-align: "center";
-    font-size: 50px;
-    text-align: center;
-    display:table-cell;
-    vertical-align:middle;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 35px;
-    padding-bottom: 45px;
-    color: #EEEEEE;
-    position: absolute;
-    left: 27%;
-    top: 67%;
-    z-index:10;
-    transition-duration: 5s;
-    opacity: 2;border: 1px 
-    solid #181818;    
-    
-    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
-}
+
 </style></head>
 <body>
 <div id="holder">
@@ -87,10 +60,6 @@ p {
 <div id ="canvas"><div id="start" class = "button">play</div>
 
 <script>
-var playbutton=document.getElementById("start");
-playbutton.addEventListener('click', function (){
-    console.log("i have been clicked");
-playbutton.style.opacity="0";
 var homepage= document.getElementById("homepage");
 homepage.style.opacity="0";
 });
