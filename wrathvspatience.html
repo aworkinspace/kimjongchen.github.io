@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cormorant+Unicase|Eczar|Oswald|Calligraffitti" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style> body, a, a:hover { cursor:url(https://i1259.photobucket.com/albums/ii543/mietoki/cursor_exo1_zpsc3b56285.png), auto }</style>
+<audio autoplay loop="infinite">
+    <source src= ./game/Monster.m4a></source>
+</audio>
+<style>
+canvas {
+    border: 10px solid #181818;
+    position: absolute;
+}
+#wrathvspatience{
+    width: 936px;
+    height: 555px;
+    background-image: url(http://i.imgur.com/pQIsCHT.png);
+    opacity: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#holder {
+    width: 936px;
+    height: 555px;
+    position: relative;
+    margin-left-left: 100px;
+}
+h3 {
+    font-family: 'Calligraffitti', cursive;
+}
+h1 {
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 75px;
+}
+h2 {
+    font-family: 'Eczar', serif;
+}
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.button{
+    width: 41px;
+    height: 37px;
+    border: 5px solid #EEEEEE;
+    padding-left:335px;
+    padding-bottom:50px;
+    padding-top:25px;
+    position: absolute;
+    right: 60%;
+    left: 2%;
+    bottom: 72%;
+}
+.button2{
+    width: 41px;
+    height: 37px;
+    border: 5px solid #EEEEEE;
+    padding-left:335px;
+    padding-bottom:50px;
+    padding-top:25px;
+    position: absolute;
+    left: 41%;
+    bottom: 45%;
+}
+</style></head>
+<body>
+<div id="holder">
+<canvas id="myCanvas" width="936" height="555" style="border:1px solid #000000;" allign = "left">
+</canvas>
+<div id="wrathvspatience"></div></div>
+<h1 align="middle">welcome</h1>
+<p align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
+<h2 allign="middle">Gameplay:</h2>
+<p><ol>
+    <li>the main objective: follow your heart</li>
+    <li>the choices you make will effect the storyline</li>
+    <li>battling your instincts will be hard, but remember who you are</li>
+</ol></p>
+<div id ="canvas"><div id="wrath" class = "button"></div>
+<div id="canvas"><div id="patience" class = "button2"></div>
 
+<script>
+var wrathbutton=document.getElementById("wrath");
+wrathbutton.addEventListener('click', function (){
+    console.log("i have been clicked");
+    window.location.href = "https://kimjongchen.github.io/wrath.html";
+});
+var patiencebutton=document.getElementById("patience");
+patiencebutton.addEventListener('click', function (){
+    console.log("i have been clicked");
+    window.location.href = "https://kimjongchen.github.io/patience.html";
+});
+</script>
+</body>
+</html>
