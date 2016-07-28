@@ -8,13 +8,10 @@
     <source src= ./game/Monster.m4a></source>
 </audio>
 <style>
-canvas {
-    border: 10px solid #181818;
-    position: absolute;
-}
 #lustvschastity{
-    width: 936px;
-    height: 555px;
+    width: 80vw;
+    height: 50vw;
+background-size: cover;
     background-image: url(http://i.imgur.com/spdfJfX.png);
     opacity: 1;
     position: absolute;
@@ -67,8 +64,6 @@ p {
 </style></head>
 <body>
 <div id="holder">
-<canvas id="myCanvas" width="936" height="555" style="border:1px solid #000000;" allign = "left">
-</canvas>
 <div id="lustvschastity"></div></div>
 <h1 align="middle">welcome</h1>
 <p align="middle">battle the Seven Deadly Sins, and ultimately fight your worst enemy; yourself.</p>
@@ -78,8 +73,8 @@ p {
     <li>the choices you make will effect the storyline</li>
     <li>battling your instincts will be hard, but remember who you are</li>
 </ol></p>
-<div id ="canvas"><div id="lust" class = "button"></div>
-<div id="canvas"><div id="chastity" class = "button2"></div>
+<div id="lust" class = "button"></div>
+<div id="chastity" class = "button2"></div>
 
 <script>
 var lustbutton=document.getElementById("lust");
